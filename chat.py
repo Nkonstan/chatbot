@@ -7,7 +7,7 @@ import warnings
 import torch
 import torch.nn.functional as F
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
-from utils1 import SPECIAL_TOKENS, build_input_from_segments, add_special_tokens_
+from utils import SPECIAL_TOKENS, build_input_from_segments, add_special_tokens_
 
 
 def top_filtering(logits, top_k=0., top_p=0.9, threshold=-float('Inf'), filter_value=-float('Inf')):
